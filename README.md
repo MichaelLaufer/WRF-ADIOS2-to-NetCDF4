@@ -28,5 +28,5 @@ netcdf4_Dataset = convert.convert(input_file, output_file, diskless=True)
 
 ## Dependencies
 netcdf4-python<br/>
-ADIOS2 (with Python bindings)<br/>
+ADIOS2 (with Python bindings, Blosc compressor)<br/>
 For MPI functionality, use parallel version of both
