@@ -5,7 +5,7 @@ Distributed memory (MPI) support is available for file conversions, but was not 
 
 For batch jobs that need to convert multiple files, Gnu Parallel should be used to convert multiple files concurrently, which should reduce the conversion time significantly.
 ## Usage
-There are 2 ways to use this script: File conversion, and In-line implicit conversion ("diskless).
+There are 2 ways to use this script: File conversion, and In-line implicit conversion ("diskless").
 
 ### File conversion:
 This will convert the ADIOS2 file and save it as a file in the output location.<br/>
