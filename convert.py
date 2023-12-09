@@ -40,9 +40,9 @@ def Locate(rank, nproc, datasize):
 
 def open_files(input_file, output_file, parallel=False, diskless=False):
     if parallel:
-        adios2f = adios2.open(input_file, "r", comm=MPI.COMM_WORLD)
+        adios2f = adios2.open(input_file, "rra", comm=MPI.COMM_WORLD)
     else:
-        adios2f = adios2.open(input_file, "r")
+        adios2f = adios2.open(input_file, "rra")
     netcdff = Dataset(
         output_file,
         "w",
